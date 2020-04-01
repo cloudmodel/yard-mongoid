@@ -1,11 +1,11 @@
 require 'yard/handlers/ruby/mongoid/relations/plural_handler'
 
 module YARD::Handlers::Ruby::Mongoid::Relations
-  class HasAndBelongsToManyHandler < PluralHandler
-    handles method_call(:has_and_belongs_to_many)
+  class EmbedsManyHandler < PluralHandler
+    handles method_call(:embeds_many)
 
     def group_name
-      'Has and belongs to many'
+      'Embeds many'
     end
 
     private
